@@ -9,30 +9,25 @@
 
 <!-- 01 WHOAMI -->
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/01-whoami.svg" alt="01 WHOAMI" />
+  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/01-whoami.svg?v=2" alt="01 WHOAMI" />
 </div>
 
 <!-- 02 SYSTEM MAP -->
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/02-system-map.svg" alt="02 SYSTEM MAP" />
+  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/02-system-map.svg?v=2" alt="02 SYSTEM MAP" />
 </div>
 
 <!-- 03 PROJECTS / ENGINEERING -->
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/03-projects.svg" alt="03 ENGINEERING" />
+  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/03-projects.svg?v=2" alt="03 ENGINEERING" />
 </div>
 
-<!-- 04 TELEMETRY + GITHUB STATS MONOCROMATICOS -->
+<!-- 04 TELEMETRY -->
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/04-telemetry.svg" alt="04 TELEMETRY" />
-</div>
-
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Sam0Net&show_icons=false&bg_color=0d1117&title_color=e6edf3&text_color=7d8590&border_color=7d8590&hide_rank=true" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sam0Net&layout=compact&langs_count=5&bg_color=0d1117&title_color=e6edf3&text_color=7d8590&border_color=7d8590" alt="Top Languages" />
+  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/04-telemetry.svg?v=2" alt="04 TELEMETRY" />
 </div>
 
 <!-- 05 STACK -->
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/05-stack.svg" alt="05 STACK" />
+  <img width="100%" src="https://raw.githubusercontent.com/Sam0Net/Sam0Net/output/assets/05-stack.svg?v=2" alt="05 STACK" />
 </div>
