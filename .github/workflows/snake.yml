@@ -1,4 +1,4 @@
-name: generate animation
+name: generate profile
 
 on:
   schedule:
@@ -16,7 +16,16 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: generate github-contribution-grid-snake.svg
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Custom Terminal SVG Panels
+        run: |
+          python3 generate_panels.py
+          mkdir -p dist/assets
+          cp -r assets/* dist/assets/
+
+      - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -24,8 +33,8 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Push SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
