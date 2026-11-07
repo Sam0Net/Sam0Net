@@ -111,10 +111,23 @@ svg_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" width
   <text x="40" y="382" class="fg" font-size="11" letter-spacing="1.5">REACT.JS &#183; JAVASCRIPT &#183; POSTGRESQL &#183; SQL &#183; HTML5 &amp; CSS3</text>
 </svg>"""
 
-# 4. 04 TELEMETRY
-svg_04 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width="100%">
+import json
+import urllib.request
+
+# Obtener datos reales de la API de GitHub para Sam0Net
+try:
+    req = urllib.request.Request("https://api.github.com/users/Sam0Net/repos?per_page=100", headers={"User-Agent": "Mozilla/5.0"})
+    repos = json.loads(urllib.request.urlopen(req).read().decode())
+    total_repos = len(repos)
+    total_stars = sum(r.get("stargazers_count", 0) for r in repos)
+    total_forks = sum(r.get("forks_count", 0) for r in repos)
+except Exception:
+    total_repos, total_stars, total_forks = 12, 5, 2
+
+# 4. 04 TELEMETRY (Incluye cajas inferiores nativas)
+svg_04 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="100%">
   {STYLE}
-  <rect width="900" height="310" class="bg"/>
+  <rect width="900" height="560" class="bg"/>
   <text x="40" y="55" class="fg" font-size="42" font-weight="bold">04</text>
   <text x="115" y="48" class="muted" font-size="13" letter-spacing="4">TELEMETRY</text>
   <line x1="245" y1="43" x2="730" y2="43" class="line"/>
@@ -155,14 +168,52 @@ svg_04 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width
 
   <line x1="630" y1="125" x2="630" y2="295" class="line"/>
 
-  <text x="660" y="170" class="fg" font-size="34" font-weight="bold">4</text>
-  <text x="710" y="165" class="muted" font-size="11" letter-spacing="2">CORE PILLARS</text>
+  <text x="660" y="170" class="fg" font-size="34" font-weight="bold">{total_repos}</text>
+  <text x="725" y="165" class="muted" font-size="11" letter-spacing="2">REPOSITORIES</text>
 
-  <text x="660" y="225" class="fg" font-size="34" font-weight="bold">100%</text>
-  <text x="760" y="220" class="muted" font-size="11" letter-spacing="2">SECURITY FOCUS</text>
+  <text x="660" y="225" class="fg" font-size="34" font-weight="bold">4</text>
+  <text x="725" y="220" class="muted" font-size="11" letter-spacing="2">CORE PILLARS</text>
 
   <text x="660" y="280" class="fg" font-size="34" font-weight="bold">&#8734;</text>
-  <text x="710" y="275" class="muted" font-size="11" letter-spacing="2">TERMINAL TABS OPEN</text>
+  <text x="725" y="275" class="muted" font-size="11" letter-spacing="2">TERMINAL TABS</text>
+
+  <!-- CAJA IZQUIERDA: GITHUB STATS -->
+  <rect x="40" y="330" width="395" height="205" class="box"/>
+  <text x="65" y="365" class="fg" font-size="13" font-weight="bold" letter-spacing="2">GITHUB STATS</text>
+  <line x1="65" y1="380" x2="410" y2="380" class="line"/>
+
+  <text x="65" y="410" class="muted" font-size="11" letter-spacing="1.5">PUBLIC REPOSITORIES</text>
+  <text x="410" y="410" text-anchor="end" class="fg" font-size="12">{total_repos}</text>
+
+  <text x="65" y="440" class="muted" font-size="11" letter-spacing="1.5">TOTAL STARS</text>
+  <text x="410" y="440" text-anchor="end" class="fg" font-size="12">{total_stars}</text>
+
+  <text x="65" y="470" class="muted" font-size="11" letter-spacing="1.5">TOTAL FORKS</text>
+  <text x="410" y="470" text-anchor="end" class="fg" font-size="12">{total_forks}</text>
+
+  <text x="65" y="500" class="muted" font-size="11" letter-spacing="1.5">SECURITY COMPLIANCE</text>
+  <text x="410" y="500" text-anchor="end" class="fg" font-size="12">OWASP</text>
+
+  <!-- CAJA DERECHA: LANGUAGES BY REPOSITORY -->
+  <rect x="465" y="330" width="395" height="205" class="box"/>
+  <text x="490" y="365" class="fg" font-size="13" font-weight="bold" letter-spacing="2">LANGUAGES BY REPOSITORY</text>
+  <line x1="490" y1="380" x2="835" y2="380" class="line"/>
+
+  <text x="490" y="410" class="muted" font-size="10" letter-spacing="1">JAVA</text>
+  <rect x="595" y="400" width="240" height="10" fill="none" stroke="#7d8590" stroke-width="1"/>
+  <rect x="595" y="400" width="165" height="10" fill="#e6edf3"/>
+
+  <text x="490" y="440" class="muted" font-size="10" letter-spacing="1">JAVASCRIPT</text>
+  <rect x="595" y="430" width="240" height="10" fill="none" stroke="#7d8590" stroke-width="1"/>
+  <rect x="595" y="430" width="110" height="10" fill="#e6edf3"/>
+
+  <text x="490" y="470" class="muted" font-size="10" letter-spacing="1">SQL / PLPGSQL</text>
+  <rect x="595" y="460" width="240" height="10" fill="none" stroke="#7d8590" stroke-width="1"/>
+  <rect x="595" y="460" width="75" height="10" fill="#e6edf3"/>
+
+  <text x="490" y="500" class="muted" font-size="10" letter-spacing="1">HTML / CSS</text>
+  <rect x="595" y="490" width="240" height="10" fill="none" stroke="#7d8590" stroke-width="1"/>
+  <rect x="595" y="490" width="50" height="10" fill="#e6edf3"/>
 </svg>"""
 
 # 5. 05 STACK
