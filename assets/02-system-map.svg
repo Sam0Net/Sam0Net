@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="100%">
+  
+  <style>
+    .bg { fill: #0d1117; }
+    .fg { fill: #e6edf3; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .muted { fill: #7d8590; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .line { stroke: #30363d; stroke-width: 1; }
+    .box { fill: #0d1117; stroke: #7d8590; stroke-width: 1; rx: 2; }
+  </style>
+
+  <rect width="900" height="440" class="bg"/>
+  <text x="40" y="55" class="fg" font-size="42" font-weight="bold">02</text>
+  <text x="115" y="48" class="muted" font-size="13" letter-spacing="4">SYSTEM MAP</text>
+  <line x1="250" y1="43" x2="730" y2="43" class="line"/>
+  <text x="750" y="47" class="muted" font-size="11" letter-spacing="1">~/02-ecosystem</text>
+
+  <text x="40" y="95" class="muted" font-size="11" letter-spacing="3">SYSTEM MAP &#8212; ARCHITECTURE &amp; SECURITY PIPELINE</text>
+  <text x="795" y="95" class="muted" font-size="11" letter-spacing="3">FIG. 01</text>
+  <line x1="40" y1="108" x2="860" y2="108" class="line"/>
+
+  <line x1="450" y1="240" x2="210" y2="170" class="line"/>
+  <line x1="450" y1="240" x2="690" y2="170" class="line"/>
+  <line x1="450" y1="240" x2="210" y2="330" class="line"/>
+  <line x1="450" y1="240" x2="690" y2="330" class="line"/>
+  <line x1="450" y1="240" x2="450" y2="365" class="line"/>
+
+  <rect x="355" y="215" width="190" height="55" class="box"/>
+  <text x="450" y="238" text-anchor="middle" class="fg" font-size="14" letter-spacing="2">SAM0NET.SYS</text>
+  <text x="450" y="256" text-anchor="middle" class="muted" font-size="10">secure full-stack core</text>
+
+  <rect x="100" y="140" width="220" height="55" class="box"/>
+  <text x="210" y="163" text-anchor="middle" class="fg" font-size="13">spring boot backend</text>
+  <text x="210" y="181" text-anchor="middle" class="muted" font-size="10">Java &#183; REST APIs &#183; DTOs</text>
+
+  <rect x="580" y="140" width="220" height="55" class="box"/>
+  <text x="690" y="163" text-anchor="middle" class="fg" font-size="13">react.js frontend</text>
+  <text x="690" y="181" text-anchor="middle" class="muted" font-size="10">SPA &#183; Modern UI &#183; Hooks</text>
+
+  <rect x="100" y="305" width="220" height="55" class="box"/>
+  <text x="210" y="328" text-anchor="middle" class="fg" font-size="13">cybersecurity layer</text>
+  <text x="210" y="346" text-anchor="middle" class="muted" font-size="10">Spring Security &#183; JWT &#183; OWASP</text>
+
+  <rect x="580" y="305" width="220" height="55" class="box"/>
+  <text x="690" y="328" text-anchor="middle" class="fg" font-size="13">postgresql engine</text>
+  <text x="690" y="346" text-anchor="middle" class="muted" font-size="10">Relational DB &#183; JPA / Hibernate</text>
+
+  <rect x="355" y="365" width="190" height="50" class="box"/>
+  <text x="450" y="387" text-anchor="middle" class="fg" font-size="13">devops &amp; linux</text>
+  <text x="450" y="403" text-anchor="middle" class="muted" font-size="10">Docker &#183; Git &#183; CI/CD</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%">
+  
+  <style>
+    .bg { fill: #0d1117; }
+    .fg { fill: #e6edf3; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .muted { fill: #7d8590; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .line { stroke: #30363d; stroke-width: 1; }
+    .box { fill: #0d1117; stroke: #7d8590; stroke-width: 1; rx: 2; }
+  </style>
+
+  <rect width="900" height="340" class="bg"/>
+  <text x="40" y="55" class="fg" font-size="42" font-weight="bold">05</text>
+  <text x="115" y="48" class="muted" font-size="13" letter-spacing="4">STACK</text>
+  <line x1="205" y1="43" x2="730" y2="43" class="line"/>
+  <text x="750" y="47" class="muted" font-size="11" letter-spacing="1">~/05-stack</text>
+
+  <line x1="140" y1="85" x2="140" y2="255" class="line"/>
+
+  <text x="40" y="105" class="muted" font-size="11" letter-spacing="2">LANGUAGES</text>
+  <text x="160" y="105" class="fg" font-size="13.5">Java &#183; JavaScript &#183; SQL &#183; HTML5 &#183; CSS3 &#183; Bash</text>
+
+  <text x="40" y="135" class="muted" font-size="11" letter-spacing="2">BACKEND</text>
+  <text x="160" y="135" class="fg" font-size="13.5">Spring Boot &#183; Spring Security &#183; Spring Data JPA &#183; REST APIs &#183; Maven</text>
+
+  <text x="40" y="165" class="muted" font-size="11" letter-spacing="2">FRONTEND</text>
+  <text x="160" y="165" class="fg" font-size="13.5">React.js &#183; Hooks &#183; Fetch / Axios &#183; Responsive UI</text>
+
+  <text x="40" y="195" class="muted" font-size="11" letter-spacing="2">DATA</text>
+  <text x="160" y="195" class="fg" font-size="13.5">PostgreSQL &#183; Relational Modeling &#183; Query Optimization</text>
+
+  <text x="40" y="225" class="muted" font-size="11" letter-spacing="2">SECURITY</text>
+  <text x="160" y="225" class="fg" font-size="13.5">Cybersecurity &#183; OWASP Top 10 &#183; JWT &#183; Kali Linux &#183; DevSecOps</text>
+
+  <text x="40" y="255" class="muted" font-size="11" letter-spacing="2">TOOLING</text>
+  <text x="160" y="255" class="fg" font-size="13.5">Git &#183; GitHub &#183; Docker &#183; Linux &#183; Postman &#183; IntelliJ IDEA &#183; VS Code</text>
+
+  <line x1="40" y1="280" x2="860" y2="280" class="line"/>
+  <circle cx="50" cy="312" r="4" fill="#e6edf3"/>
+  <text x="68" y="308" class="muted" font-size="11" letter-spacing="2">STATUS &#8212; BUILDING SECURE SYSTEMS</text>
+  <text x="68" y="326" class="muted" font-size="11" letter-spacing="1">java &#183; spring boot &#183; react &#183; cybersecurity</text>
+  <text x="640" y="316" class="fg" font-size="13">github.com/Sam0Net &#183; &#169; 2026</text>
+</svg>
