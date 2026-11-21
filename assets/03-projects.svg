@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" width="100%">
+  
+  <style>
+    .bg { fill: #0d1117; }
+    .fg { fill: #e6edf3; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .muted { fill: #7d8590; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .line { stroke: #30363d; stroke-width: 1; }
+    .box { fill: #0d1117; stroke: #7d8590; stroke-width: 1; rx: 2; }
+  </style>
+
+  <rect width="900" height="390" class="bg"/>
+  <text x="40" y="55" class="fg" font-size="42" font-weight="bold">03</text>
+  <text x="115" y="48" class="muted" font-size="13" letter-spacing="4">ENGINEERING</text>
+  <line x1="255" y1="43" x2="730" y2="43" class="line"/>
+  <text x="750" y="47" class="muted" font-size="11" letter-spacing="1">~/03-focus</text>
+
+  <text x="40" y="105" class="fg" font-size="16" font-weight="bold" letter-spacing="2">01 / ENTERPRISE BACKEND &amp; REST APIs</text>
+  <text x="40" y="130" class="muted" font-size="13">Modular API architecture with Spring Boot, strict data validation, DTO layers and clean separation</text>
+  <text x="40" y="150" class="muted" font-size="13">of concerns for scalable business systems.</text>
+  <text x="40" y="172" class="fg" font-size="11" letter-spacing="1.5">JAVA &#183; SPRING BOOT &#183; REST API &#183; MAVEN &#183; CLEAN ARCHITECTURE</text>
+  <line x1="40" y1="190" x2="860" y2="190" class="line"/>
+
+  <text x="40" y="220" class="fg" font-size="16" font-weight="bold" letter-spacing="2">02 / CYBERSECURITY &amp; SECURE DEVELOPMENT</text>
+  <text x="40" y="245" class="muted" font-size="13">Implementation of authentication, role-based access control, encryption and vulnerability</text>
+  <text x="40" y="265" class="muted" font-size="13">mitigation aligned with OWASP Top 10 standards.</text>
+  <text x="40" y="287" class="fg" font-size="11" letter-spacing="1.5">CYBERSECURITY &#183; SPRING SECURITY &#183; JWT &#183; KALI LINUX &#183; OWASP</text>
+  <line x1="40" y1="305" x2="860" y2="305" class="line"/>
+
+  <text x="40" y="335" class="fg" font-size="16" font-weight="bold" letter-spacing="2">03 / FULL-STACK WEB &amp; RELATIONAL DATA</text>
+  <text x="40" y="360" class="muted" font-size="13">Responsive interfaces built with React.js connected to optimized PostgreSQL schemas.</text>
+  <text x="40" y="382" class="fg" font-size="11" letter-spacing="1.5">REACT.JS &#183; JAVASCRIPT &#183; POSTGRESQL &#183; SQL &#183; HTML5 &amp; CSS3</text>
+</svg>
